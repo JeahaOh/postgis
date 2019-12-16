@@ -1,0 +1,12 @@
+# 공간 데이터 추가하기
+- `http://data.seoul.go.kr/` 에서 `서울시 법정구역 읍면동 공간정보` 검색
+- 서울시 법정구역 읍면동 공간정보 (좌표계: WGS1984) 데이터 셋에서 Map 탭 선택
+- SHP 파일 목록의 `TC_SPBE17_2015_W_SHP.zip` 다운로드 압축 해제
+- pgadmin4 실행
+- Database -> Create > Database 'Seoul'
+- DB 선택 후 Qeury Toool 선택
+- `CREATE EXTENSION POSTGIS;` 실행(f5)
+- PostGIS Shapefile Importer/Export Manager 실행
+- Add File -> 파일 지정
+- SRID를 4326으로 지정
+- PostGIS connection 설정
